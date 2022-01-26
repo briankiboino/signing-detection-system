@@ -1,0 +1,26 @@
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+
+import {MainPageComponent} from './main.component';
+import {AppModule} from '../../app.module';
+
+describe('MainPageComponent', () => {
+  let component: MainPageComponent;
+  let fixture: ComponentFixture<MainPageComponent>;
+
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [MainPageComponent],
+      imports: [AppModule]
+    }).compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(MainPageComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
